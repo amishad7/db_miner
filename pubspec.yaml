@@ -39,6 +39,9 @@ dependencies:
   sqflite:
   path:
   animated_toggle_switch:
+  path_provider:
+  http:
+  flutter_file_dialog:
 
 
 dev_dependencies:
