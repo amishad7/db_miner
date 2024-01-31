@@ -106,16 +106,24 @@ class _HomeState extends State<Home> {
       ),
       body: GridView.builder(
         itemCount: imges.length,
-        gridDelegate:
-            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 0.82,
+          // mainAxisSpacing: 1,
+          crossAxisSpacing: 2,
+        ),
         itemBuilder: (context, index) => GestureDetector(
+          onLongPress: () {
+            log(1);
+            CircleAvatar();
+          },
           onTap: () async {
             _saveImage(context, i: index);
           },
           child: Container(
-            // height: 300,
-            width: 20,
-            margin: EdgeInsets.all(4),
+            // height: 120,
+            // width: 120,
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               image: DecorationImage(
