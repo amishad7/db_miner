@@ -1,0 +1,1271 @@
+[
+  {
+    "id": 1,
+    "author": "Albert Einstein",
+    "quote": "Imagination is more important than knowledge.",
+    "like": false,
+    "category": "Inspiration"
+  },
+  {
+    "id": 2,
+    "author": "Maya Angelou",
+    "quote": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    "like": false,
+    "category": "Life"
+  },
+  {
+    "id": 3,
+    "author": "Oscar Wilde",
+    "quote": "Be yourself; everyone else is already taken.",
+    "like": false,
+    "category": "Wisdom"
+  },
+  {
+    "id": 4,
+    "author": "Mark Twain",
+    "quote": "The secret of getting ahead is getting started.",
+    "like": false,
+    "category": "Motivation"
+  },
+  {
+    "id": 5,
+    "author": "Eleanor Roosevelt",
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "like": false,
+    "category": "Dreams"
+  },
+
+
+    {
+      "id": 6,
+      "author": "Dr. Seuss",
+      "quote": "Don't cry because it's over, smile because it happened.",
+      "like": false,
+      "category": "Happiness"
+    },
+    {
+      "id": 7,
+      "author": "Steve Jobs",
+      "quote": "Your time is limited, don't waste it living someone else's life.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 8,
+      "author": "C.S. Lewis",
+      "quote": "You are never too old to set another goal or to dream a new dream.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 9,
+      "author": "Confucius",
+      "quote": "It does not matter how slowly you go as long as you do not stop.",
+      "like": false,
+      "category": "Perseverance"
+    },
+    {
+      "id": 10,
+      "author": "Ralph Waldo Emerson",
+      "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 11,
+      "author": "Helen Keller",
+      "quote": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+      "like": false,
+      "category": "Beauty"
+    },
+    {
+      "id": 12,
+      "author": "Walt Disney",
+      "quote": "The way to get started is to quit talking and begin doing.",
+      "like": false,
+      "category": "Action"
+    },
+    {
+      "id": 13,
+      "author": "Nelson Mandela",
+      "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      "like": false,
+      "category": "Resilience"
+    },
+    {
+      "id": 14,
+      "author": "William Shakespeare",
+      "quote": "This above all: to thine own self be true.",
+      "like": false,
+      "category": "Authenticity"
+    },
+    {
+      "id": 15,
+      "author": "Abraham Lincoln",
+      "quote": "In the end, it's not the years in your life that count. It's the life in your years.",
+      "like": false,
+      "category": "Life"
+    },
+    {
+      "id": 16,
+      "author": "J.K. Rowling",
+      "quote": "It does not do to dwell on dreams and forget to live.",
+      "like": false,
+      "category": "Reality"
+    },
+    {
+      "id": 17,
+      "author": "Vincent van Gogh",
+      "quote": "Great things are not done by impulse but by a series of small things brought together.",
+      "like": false,
+      "category": "Greatness"
+    },
+    {
+      "id": 18,
+      "author": "Socrates",
+      "quote": "The only true wisdom is in knowing you know nothing.",
+      "like": false,
+      "category": "Wisdom"
+    },
+    {
+      "id": 19,
+      "author": "Eleanor Roosevelt",
+      "quote": "No one can make you feel inferior without your consent.",
+      "like": false,
+      "category": "Empowerment"
+    },
+    {
+      "id": 20,
+      "author": "John F. Kennedy",
+      "quote": "Change is the law of life. And those who look only to the past or present are certain to miss the future.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 21,
+      "author": "Martin Luther King Jr.",
+      "quote": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.",
+      "like": false,
+      "category": "Love"
+    },
+    {
+      "id": 22,
+      "author": "Thomas Edison",
+      "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+      "like": false,
+      "category": "Persistence"
+    },
+    {
+      "id": 23,
+      "author": "Aristotle",
+      "quote": "It is during our darkest moments that we must focus to see the light.",
+      "like": false,
+      "category": "Hope"
+    },
+    {
+      "id": 24,
+      "author": "Coco Chanel",
+      "quote": "Success is most often achieved by those who don't know that failure is inevitable.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 25,
+      "author": "Henry Ford",
+      "quote": "Whether you think you can, or you think you can't – you're right.",
+      "like": false,
+      "category": "Mindset"
+    },
+    {
+      "id": 26,
+      "author": "Dalai Lama",
+      "quote": "The purpose of our lives is to be happy.",
+      "like": false,
+      "category": "Happiness"
+    },
+    {
+      "id": 27,
+      "author": "Bruce Lee",
+      "quote": "Absorb what is useful, discard what is not, add what is uniquely your own.",
+      "like": false,
+      "category": "Wisdom"
+    },
+    {
+      "id": 28,
+      "author": "Rumi",
+      "quote": "The wound is the place where the light enters you.",
+      "like": false,
+      "category": "Healing"
+    },
+    {
+      "id": 29,
+      "author": "Winston Churchill",
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "like": false,
+      "category": "Courage"
+    },
+    {
+      "id": 30,
+      "author": "J.R.R. Tolkien",
+      "quote": "Not all those who wander are lost.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 31,
+      "author": "Maya Angelou",
+      "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
+      "like": false,
+      "category": "Attitude"
+    },
+    {
+      "id": 32,
+      "author": "Mahatma Gandhi",
+      "quote": "Be the change that you wish to see in the world.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 33,
+      "author": "Anne Frank",
+      "quote": "In spite of everything, I still believe that people are really good at heart.",
+      "like": false,
+      "category": "Belief"
+    },
+    {
+      "id": 34,
+      "author": "Coco Chanel",
+      "quote": "In order to be irreplaceable, one must always be different.",
+      "like": false,
+      "category": "Individuality"
+    },
+    {
+      "id": 35,
+      "author": "Albert Einstein",
+      "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "like": false,
+      "category": "Life"
+    },
+    {
+      "id": 36,
+      "author": "Helen Keller",
+      "quote": "The best way to predict the future is to create it.",
+      "like": false,
+      "category": "Future"
+    },
+    {
+      "id": 37,
+      "author": "Martin Luther King Jr.",
+      "quote": "The time is always right to do what is right.",
+      "like": false,
+      "category": "Justice"
+    },
+    {
+      "id": 38,
+      "author": "Oscar Wilde",
+      "quote": "To live is the rarest thing in the world. Most people exist, that is all.",
+      "like": false,
+      "category": "Living"
+    },
+    {
+      "id": 39,
+      "author": "Eleanor Roosevelt",
+      "quote": "Do what you feel in your heart to be right, for you'll be criticized anyway.",
+      "like": false,
+      "category": "Integrity"
+    },
+    {
+      "id": 40,
+      "author": "Walt Disney",
+      "quote": "All our dreams can come true if we have the courage to pursue them.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 41,
+      "author": "Ralph Waldo Emerson",
+      "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+      "like": false,
+      "category": "Inner Strength"
+    },
+    {
+      "id": 42,
+      "author": "Steve Jobs",
+      "quote": "The only way to do great work is to love what you do.",
+      "like": false,
+      "category": "Passion"
+    },
+    {
+      "id": 43,
+      "author": "Hermann Hesse",
+      "quote": "Words do not express thoughts very well. They always become a little different immediately after they are expressed.",
+      "like": false,
+      "category": "Communication"
+    },
+    {
+      "id": 44,
+      "author": "Rosa Parks",
+      "quote": "I would like to be remembered as a person who wanted to be free... so other people would be also free.",
+      "like": false,
+      "category": "Freedom"
+    },
+    {
+      "id": 45,
+      "author": "Aristotle",
+      "quote": "Knowing yourself is the beginning of all wisdom.",
+      "like": false,
+      "category": "Self-Discovery"
+    },
+    {
+      "id": 46,
+      "author": "John Wooden",
+      "quote": "Don't let what you cannot do interfere with what you can do.",
+      "like": false,
+      "category": "Potential"
+    },
+    {
+      "id": 47,
+      "author": "Malala Yousafzai",
+      "quote": "We realize the importance of our voices only when we are silenced.",
+      "like": false,
+      "category": "Voice"
+    },
+    {
+      "id": 48,
+      "author": "Leo Tolstoy",
+      "quote": "Everyone thinks of changing the world, but no one thinks of changing himself.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 49,
+      "author": "George Eliot",
+      "quote": "It is never too late to be what you might have been.",
+      "like": false,
+      "category": "Opportunity"
+    },
+    {
+      "id": 50,
+      "author": "Aesop",
+      "quote": "No act of kindness, no matter how small, is ever wasted.",
+      "like": false,
+      "category": "Kindness"
+    },
+    {
+      "id": 51,
+      "author": "J.R.R. Tolkien",
+      "quote": "The greatest adventure is what lies ahead.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 52,
+      "author": "Vincent van Gogh",
+      "quote": "Great things are not done by impulse but by a series of small things brought together.",
+      "like": false,
+      "category": "Greatness"
+    },
+    {
+      "id": 53,
+      "author": "Socrates",
+      "quote": "The only true wisdom is in knowing you know nothing.",
+      "like": false,
+      "category": "Wisdom"
+    },
+    {
+      "id": 54,
+      "author": "Eleanor Roosevelt",
+      "quote": "No one can make you feel inferior without your consent.",
+      "like": false,
+      "category": "Empowerment"
+    },
+    {
+      "id": 55,
+      "author": "John F. Kennedy",
+      "quote": "Change is the law of life. And those who look only to the past or present are certain to miss the future.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 56,
+      "author": "Martin Luther King Jr.",
+      "quote": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.",
+      "like": false,
+      "category": "Love"
+    },
+    {
+      "id": 57,
+      "author": "Thomas Edison",
+      "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+      "like": false,
+      "category": "Persistence"
+    },
+    {
+      "id": 58,
+      "author": "Aristotle",
+      "quote": "It is during our darkest moments that we must focus to see the light.",
+      "like": false,
+      "category": "Hope"
+    },
+    {
+      "id": 59,
+      "author": "Coco Chanel",
+      "quote": "Success is most often achieved by those who don't know that failure is inevitable.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 60,
+      "author": "Henry Ford",
+      "quote": "Whether you think you can, or you think you can't – you're right.",
+      "like": false,
+      "category": "Mindset"
+    },
+    {
+      "id": 61,
+      "author": "Dalai Lama",
+      "quote": "The purpose of our lives is to be happy.",
+      "like": false,
+      "category": "Happiness"
+    },
+    {
+      "id": 62,
+      "author": "Bruce Lee",
+      "quote": "Absorb what is useful, discard what is not, add what is uniquely your own.",
+      "like": false,
+      "category": "Wisdom"
+    },
+    {
+      "id": 63,
+      "author": "Rumi",
+      "quote": "The wound is the place where the light enters you.",
+      "like": false,
+      "category": "Healing"
+    },
+    {
+      "id": 64,
+      "author": "Winston Churchill",
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "like": false,
+      "category": "Courage"
+    },
+    {
+      "id": 65,
+      "author": "J.R.R. Tolkien",
+      "quote": "Not all those who wander are lost.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 66,
+      "author": "Dr. Seuss",
+      "quote": "Why fit in when you were born to stand out?",
+      "like": false,
+      "category": "Individuality"
+    },
+    {
+      "id": 67,
+      "author": "Walt Disney",
+      "quote": "The more you like yourself, the less you are like anyone else, which makes you unique.",
+      "like": false,
+      "category": "Self-Love"
+    },
+    {
+      "id": 68,
+      "author": "Albert Einstein",
+      "quote": "The only source of knowledge is experience.",
+      "like": false,
+      "category": "Knowledge"
+    },
+    {
+      "id": 69,
+      "author": "Martin Luther King Jr.",
+      "quote": "Our lives begin to end the day we become silent about things that matter.",
+      "like": false,
+      "category": "Justice"
+    },
+    {
+      "id": 70,
+      "author": "Maya Angelou",
+      "quote": "We may encounter many defeats, but we must not be defeated.",
+      "like": false,
+      "category": "Resilience"
+    },
+    {
+      "id": 71,
+      "author": "Eleanor Roosevelt",
+      "quote": "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.",
+      "like": false,
+      "category": "Life"
+    },
+    {
+      "id": 72,
+      "author": "Dalai Lama",
+      "quote": "Be kind whenever possible. It is always possible.",
+      "like": false,
+      "category": "Kindness"
+    },
+    {
+      "id": 73,
+      "author": "Albert Einstein",
+      "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+      "like": false,
+      "category": "Humor"
+    },
+    {
+      "id": 74,
+      "author": "C.S. Lewis",
+      "quote": "You can make anything by writing.",
+      "like": false,
+      "category": "Creativity"
+    },
+    {
+      "id": 75,
+      "author": "Abraham Lincoln",
+      "quote": "Whatever you are, be a good one.",
+      "like": false,
+      "category": "Excellence"
+    },
+    {
+      "id": 76,
+      "author": "Audrey Hepburn",
+      "quote": "The most important thing is to enjoy your life—to be happy—it's all that matters.",
+      "like": false,
+      "category": "Happiness"
+    },
+    {
+      "id": 77,
+      "author": "Maya Angelou",
+      "quote": "You can't use up creativity. The more you use, the more you have.",
+      "like": false,
+      "category": "Creativity"
+    },
+    {
+      "id": 78,
+      "author": "Walt Disney",
+      "quote": "If you can dream it, you can do it.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 79,
+      "author": "George Bernard Shaw",
+      "quote": "Life isn't about finding yourself. Life is about creating yourself.",
+      "like": false,
+      "category": "Creation"
+    },
+    {
+      "id": 80,
+      "author": "Oprah Winfrey",
+      "quote": "You become what you believe.",
+      "like": false,
+      "category": "Belief"
+    },
+    {
+      "id": 81,
+      "author": "Mother Teresa",
+      "quote": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+      "like": false,
+      "category": "Love"
+    },
+    {
+      "id": 82,
+      "author": "Ralph Waldo Emerson",
+      "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+      "like": false,
+      "category": "Trailblazing"
+    },
+    {
+      "id": 83,
+      "author": "Stephen Hawking",
+      "quote": "The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge.",
+      "like": false,
+      "category": "Knowledge"
+    },
+    {
+      "id": 84,
+      "author": "Malcolm X",
+      "quote": "The future belongs to those who prepare for it today.",
+      "like": false,
+      "category": "Future"
+    },
+    {
+      "id": 85,
+      "author": "Helen Keller",
+      "quote": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
+      "like": false,
+      "category": "Optimism"
+    },
+    {
+      "id": 86,
+      "author": "Steve Jobs",
+      "quote": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
+      "like": false,
+      "category": "Work"
+    },
+    {
+      "id": 87,
+      "author": "John Wooden",
+      "quote": "It's not about being better than someone else, it's about being better than you were the day before.",
+      "like": false,
+      "category": "Improvement"
+    },
+    {
+      "id": 88,
+      "author": "Buddha",
+      "quote": "The mind is everything. What you think you become.",
+      "like": false,
+      "category": "Mindset"
+    },
+    {
+      "id": 89,
+      "author": "Albert Schweitzer",
+      "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 90,
+      "author": "Eleanor Roosevelt",
+      "quote": "Do one thing every day that scares you.",
+      "like": false,
+      "category": "Fear"
+    },
+    {
+      "id": 91,
+      "author": "Lao Tzu",
+      "quote": "The journey of a thousand miles begins with a single step.",
+      "like": false,
+      "category": "Journey"
+    },
+    {
+      "id": 92,
+      "author": "Pablo Picasso",
+      "quote": "Every child is an artist. The problem is how to remain an artist once he grows up.",
+      "like": false,
+      "category": "Creativity"
+    },
+    {
+      "id": 93,
+      "author": "Albert Einstein",
+      "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "like": false,
+      "category": "Balance"
+    },
+    {
+      "id": 94,
+      "author": "Dr. Seuss",
+      "quote": "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
+      "like": false,
+      "category": "Choice"
+    },
+    {
+      "id": 95,
+      "author": "Maya Angelou",
+      "quote": "We can complain because rose bushes have thorns, or rejoice because thorns have roses.",
+      "like": false,
+      "category": "Perspective"
+    },
+    {
+      "id": 96,
+      "author": "Albert Camus",
+      "quote": "In the depth of winter, I finally learned that there was in me an invincible summer.",
+      "like": false,
+      "category": "Resilience"
+    },
+    {
+      "id": 97,
+      "author": "Frank Sinatra",
+      "quote": "The best revenge is massive success.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 98,
+      "author": "Winston Churchill",
+      "quote": "Success always demands a greater effort.",
+      "like": false,
+      "category": "Effort"
+    },
+    {
+      "id": 99,
+      "author": "Albert Einstein",
+      "quote": "A person who never made a mistake never tried anything new.",
+      "like": false,
+      "category": "Mistakes"
+    },
+    {
+      "id": 100,
+      "author": "J.K. Rowling",
+      "quote": "It is our choices that show what we truly are, far more than our abilities.",
+      "like": false,
+      "category": "Choices"
+    },
+    {
+      "id": 101,
+      "author": "Coco Chanel",
+      "quote": "Fashion is not something that exists in dresses only. Fashion is in the sky, in the street; fashion has to do with ideas, the way we live, what is happening.",
+      "like": false,
+      "category": "Fashion"
+    },
+    {
+      "id": 102,
+      "author": "Henry David Thoreau",
+      "quote": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 103,
+      "author": "William James",
+      "quote": "The greatest use of life is to spend it for something that will outlast it.",
+      "like": false,
+      "category": "Legacy"
+    },
+    {
+      "id": 104,
+      "author": "Jim Rohn",
+      "quote": "Don't wish it were easier; wish you were better.",
+      "like": false,
+      "category": "Personal Growth"
+    },
+    {
+      "id": 105,
+      "author": "Plato",
+      "quote": "At the touch of love, everyone becomes a poet.",
+      "like": false,
+      "category": "Love"
+    },
+    {
+      "id": 106,
+      "author": "Oscar Wilde",
+      "quote": "Experience is simply the name we give our mistakes.",
+      "like": false,
+      "category": "Experience"
+    },
+    {
+      "id": 107,
+      "author": "Ralph Waldo Emerson",
+      "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+      "like": false,
+      "category": "Goals"
+    },
+    {
+      "id": 108,
+      "author": "Anne Frank",
+      "quote": "Think of all the beauty still left around you and be happy.",
+      "like": false,
+      "category": "Happiness"
+    },
+    {
+      "id": 109,
+      "author": "Helen Keller",
+      "quote": "Life is either a daring adventure or nothing at all.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 110,
+      "author": "Maya Angelou",
+      "quote": "You will face many defeats in life, but never let yourself be defeated.",
+      "like": false,
+      "category": "Resilience"
+    },
+    {
+      "id": 111,
+      "author": "J.R.R. Tolkien",
+      "quote": "Courage is found in unlikely places.",
+      "like": false,
+      "category": "Courage"
+    },
+    {
+      "id": 112,
+      "author": "Heraclitus",
+      "quote": "Change is the only constant in life.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 113,
+      "author": "Vincent van Gogh",
+      "quote": "I dream my painting, and then I paint my dream.",
+      "like": false,
+      "category": "Art"
+    },
+    {
+      "id": 114,
+      "author": "Eleanor Roosevelt",
+      "quote": "No one can make you feel inferior without your consent.",
+      "like": false,
+      "category": "Empowerment"
+    },
+    {
+      "id": 115,
+      "author": "Walt Disney",
+      "quote": "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
+      "like": false,
+      "category": "Learning"
+    },
+    {
+      "id": 116,
+      "author": "Albert Einstein",
+      "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "like": false,
+      "category": "Balance"
+    },
+    {
+      "id": 117,
+      "author": "Harriet Beecher Stowe",
+      "quote": "The bitterest tears shed over graves are for words left unsaid and deeds left undone.",
+      "like": false,
+      "category": "Regret"
+    },
+    {
+      "id": 118,
+      "author": "Audrey Hepburn",
+      "quote": "The beauty of a woman is not in the clothes she wears, the figure that she carries, or the way she combs her hair. The beauty of a woman is seen in her eyes because that is the doorway to her heart, the place where love resides.",
+      "like": false,
+      "category": "Beauty"
+    },
+    {
+      "id": 119,
+      "author": "Winston Churchill",
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "like": false,
+      "category": "Courage"
+    },
+    {
+      "id": 120,
+      "author": "J.K. Rowling",
+      "quote": "It is our choices that show what we truly are, far more than our abilities.",
+      "like": false,
+      "category": "Choices"
+    },
+    {
+      "id": 121,
+      "author": "Elbert Hubbard",
+      "quote": "Do not take life too seriously. You will never get out of it alive.",
+      "like": false,
+      "category": "Humor"
+    },
+    {
+      "id": 122,
+      "author": "Maya Angelou",
+      "quote": "We can learn to see each other and see ourselves in each other and recognize that human beings are more alike than we are unalike.",
+      "like": false,
+      "category": "Unity"
+    },
+    {
+      "id": 123,
+      "author": "Thomas Edison",
+      "quote": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+      "like": false,
+      "category": "Persistence"
+    },
+    {
+      "id": 124,
+      "author": "Helen Keller",
+      "quote": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+      "like": false,
+      "category": "Beauty"
+    },
+    {
+      "id": 125,
+      "author": "Ralph Waldo Emerson",
+      "quote": "Nature always wears the colors of the spirit.",
+      "like": false,
+      "category": "Nature"
+    },
+    {
+      "id": 126,
+      "author": "Aesop",
+      "quote": "No act of kindness, no matter how small, is ever wasted.",
+      "like": false,
+      "category": "Kindness"
+    },
+    {
+      "id": 127,
+      "author": "Leonardo da Vinci",
+      "quote": "Simplicity is the ultimate sophistication.",
+      "like": false,
+      "category": "Simplicity"
+    },
+    {
+      "id": 128,
+      "author": "Eleanor Roosevelt",
+      "quote": "Do what you feel in your heart to be right, for you'll be criticized anyway.",
+      "like": false,
+      "category": "Integrity"
+    },
+    {
+      "id": 129,
+      "author": "Napoleon Hill",
+      "quote": "The starting point of all achievement is desire.",
+      "like": false,
+      "category": "Achievement"
+    },
+    {
+      "id": 130,
+      "author": "Aristotle",
+      "quote": "Quality is not an act, it is a habit.",
+      "like": false,
+      "category": "Quality"
+    },
+    {
+      "id": 131,
+      "author": "J.K. Rowling",
+      "quote": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+      "like": false,
+      "category": "Bravery"
+    },
+    {
+      "id": 132,
+      "author": "Maya Angelou",
+      "quote": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+      "like": false,
+      "category": "Empathy"
+    },
+    {
+      "id": 133,
+      "author": "Thomas Edison",
+      "quote": "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
+      "like": false,
+      "category": "Perseverance"
+    },
+    {
+      "id": 134,
+      "author": "Plato",
+      "quote": "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.",
+      "like": false,
+      "category": "Wisdom"
+    },
+    {
+      "id": 135,
+      "author": "Eleanor Roosevelt",
+      "quote": "Do not stop thinking of life as an adventure. You have no security unless you can live bravely, excitingly, imaginatively; unless you can choose a challenge instead of competence.",
+      "like": false,
+      "category": "Adventure"
+    },
+    {
+      "id": 136,
+      "author": "Ralph Waldo Emerson",
+      "quote": "What you do speaks so loudly that I cannot hear what you say.",
+      "like": false,
+      "category": "Actions"
+    },
+    {
+      "id": 137,
+      "author": "Walt Disney",
+      "quote": "The way to get started is to quit talking and begin doing.",
+      "like": false,
+      "category": "Action"
+    },
+    {
+      "id": 138,
+      "author": "Maya Angelou",
+      "quote": "I don't trust people who don't love themselves and tell me, 'I love you.' ... There is an African saying which is: Be careful when a naked person offers you a shirt.",
+      "like": false,
+      "category": "Self-Love"
+    },
+    {
+      "id": 139,
+      "author": "Helen Keller",
+      "quote": "Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.",
+      "like": false,
+      "category": "Character"
+    },
+    {
+      "id": 140,
+      "author": "Ralph Waldo Emerson",
+      "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+      "like": false,
+      "category": "Authenticity"
+    },
+    {
+      "id": 141,
+      "author": "Lao Tzu",
+      "quote": "The journey of a thousand miles begins with one step.",
+      "like": false,
+      "category": "Journey"
+    },
+    {
+      "id": 142,
+      "author": "Albert Einstein",
+      "quote": "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.",
+      "like": false,
+      "category": "Imagination"
+    },
+    {
+      "id": 143,
+      "author": "Franklin D. Roosevelt",
+      "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+      "like": false,
+      "category": "Doubt"
+    },
+    {
+      "id": 144,
+      "author": "Oscar Wilde",
+      "quote": "To live is the rarest thing in the world. Most people exist, that is all.",
+      "like": false,
+      "category": "Life"
+    },
+    {
+      "id": 145,
+      "author": "Vincent van Gogh",
+      "quote": "I am seeking. I am striving. I am in it with all my heart.",
+      "like": false,
+      "category": "Passion"
+    },
+    {
+      "id": 146,
+      "author": "Albert Schweitzer",
+      "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 147,
+      "author": "Aristotle",
+      "quote": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+      "like": false,
+      "category": "Education"
+    },
+    {
+      "id": 148,
+      "author": "Helen Keller",
+      "quote": "Life is an exciting business, and most exciting when it is lived for others.",
+      "like": false,
+      "category": "Altruism"
+    },
+    {
+      "id": 149,
+      "author": "Thomas Edison",
+      "quote": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+      "like": false,
+      "category": "Persistence"
+    },
+    {
+      "id": 150,
+      "author": "Ralph Waldo Emerson",
+      "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+      "like": false,
+      "category": "Trailblazing"
+    },
+    {
+      "id": 151,
+      "author": "C.S. Lewis",
+      "quote": "Courage, dear heart.",
+      "like": false,
+      "category": "Courage"
+    },
+    {
+      "id": 152,
+      "author": "Vincent van Gogh",
+      "quote": "Great things are not done by impulse, but by a series of small things brought together.",
+      "like": false,
+      "category": "Greatness"
+    },
+    {
+      "id": 153,
+      "author": "Eleanor Roosevelt",
+      "quote": "You must do the things you think you cannot do.",
+      "like": false,
+      "category": "Challenges"
+    },
+    {
+      "id": 154,
+      "author": "Maya Angelou",
+      "quote": "If you are always trying to be normal, you will never know how amazing you can be.",
+      "like": false,
+      "category": "Individuality"
+    },
+    {
+      "id": 155,
+      "author": "Winston Churchill",
+      "quote": "Attitude is a little thing that makes a big difference.",
+      "like": false,
+      "category": "Attitude"
+    },
+    {
+      "id": 156,
+      "author": "Ralph Waldo Emerson",
+      "quote": "Nature always wears the colors of the spirit.",
+      "like": false,
+      "category": "Nature"
+    },
+    {
+      "id": 157,
+      "author": "Oscar Wilde",
+      "quote": "The only thing worse than being talked about is not being talked about.",
+      "like": false,
+      "category": "Fame"
+    },
+    {
+      "id": 158,
+      "author": "Eleanor Roosevelt",
+      "quote": "The future belongs to those who believe in the beauty of their dreams.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 159,
+      "author": "John F. Kennedy",
+      "quote": "Efforts and courage are not enough without purpose and direction.",
+      "like": false,
+      "category": "Purpose"
+    },
+    {
+      "id": 160,
+      "author": "Albert Einstein",
+      "quote": "The only way to do great work is to love what you do.",
+      "like": false,
+      "category": "Passion"
+    },
+    {
+      "id": 161,
+      "author": "Maya Angelou",
+      "quote": "You can't use up creativity. The more you use, the more you have.",
+      "like": false,
+      "category": "Creativity"
+    },
+    {
+      "id": 162,
+      "author": "Walt Disney",
+      "quote": "All our dreams can come true if we have the courage to pursue them.",
+      "like": false,
+      "category": "Dreams"
+    },
+    {
+      "id": 163,
+      "author": "Ralph Waldo Emerson",
+      "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+      "like": false,
+      "category": "Inner Strength"
+    },
+    {
+      "id": 164,
+      "author": "Steve Jobs",
+      "quote": "The only way to do great work is to love what you do.",
+      "like": false,
+      "category": "Passion"
+    },
+    {
+      "id": 165,
+      "author": "Hermann Hesse",
+      "quote": "Words do not express thoughts very well. They always become a little different immediately after they are expressed.",
+      "like": false,
+      "category": "Communication"
+    },
+    {
+      "id": 166,
+      "author": "Rosa Parks",
+      "quote": "I would like to be remembered as a person who wanted to be free... so other people would be also free.",
+      "like": false,
+      "category": "Freedom"
+    },
+    {
+      "id": 167,
+      "author": "Aristotle",
+      "quote": "Knowing yourself is the beginning of all wisdom.",
+      "like": false,
+      "category": "Self-Discovery"
+    },
+    {
+      "id": 168,
+      "author": "John Wooden",
+      "quote": "Don't let what you cannot do interfere with what you can do.",
+      "like": false,
+      "category": "Potential"
+    },
+    {
+      "id": 169,
+      "author": "Malala Yousafzai",
+      "quote": "We realize the importance of our voices only when we are silenced.",
+      "like": false,
+      "category": "Voice"
+    },
+    {
+      "id": 170,
+      "author": "Leo Tolstoy",
+      "quote": "Everyone thinks of changing the world, but no one thinks of changing himself.",
+      "like": false,
+      "category": "Change"
+    },
+    {
+      "id": 171,
+      "author": "George Eliot",
+      "quote": "It is never too late to be what you might have been.",
+      "like": false,
+      "category": "Opportunity"
+    },
+    {
+      "id": 172,
+      "author": "Aesop",
+      "quote": "No act of kindness, no matter how small, is ever wasted.",
+      "like": false,
+      "category": "Kindness"
+    },
+    {
+      "id": 173,
+      "author": "Jim Rohn",
+      "quote": "The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not a bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly.",
+      "like": false,
+      "category": "Leadership"
+    },
+    {
+      "id": 174,
+      "author": "Aristotle",
+      "quote": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+      "like": false,
+      "category": "Education"
+    },
+    {
+      "id": 175,
+      "author": "Maya Angelou",
+      "quote": "We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty.",
+      "like": false,
+      "category": "Transformation"
+    },
+    {
+      "id": 176,
+      "author": "Winston Churchill",
+      "quote": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+      "like": false,
+      "category": "Success"
+    },
+    {
+      "id": 177,
+      "author": "Albert Einstein",
+      "quote": "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.",
+      "like": false,
+      "category": "Imagination"
+    },
+    {
+      "id": 178,
+      "author": "Vincent van Gogh",
+      "quote": "I am seeking. I am striving. I am in it with all my heart.",
+      "like": false,
+      "category": "Passion"
+    },
+    {
+      "id": 179,
+      "author": "Ralph Waldo Emerson",
+      "quote": "What you do speaks so loudly that I cannot hear what you say.",
+      "like": false,
+      "category": "Actions"
+    },
+    {
+      "id": 180,
+      "author": "Walt Disney",
+      "quote": "The way to get started is to quit talking and begin doing.",
+      "like": false,
+      "category": "Action"
+    }
+
+
+
+
+
+
+
+]
