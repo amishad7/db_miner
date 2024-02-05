@@ -1,16 +1,16 @@
 class JsonModel {
-  int id;
+  int? id;
   var author;
   var quote;
   var category;
   var like;
 
   JsonModel({
-    required this.id,
     required this.author,
     required this.category,
     required this.like,
     required this.quote,
+    this.id,
   });
 
   factory JsonModel.fetchData({required Map data}) {
