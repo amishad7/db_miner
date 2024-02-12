@@ -125,37 +125,37 @@ class SubView extends StatelessWidget {
               ),
             ),
 
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(70),
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.white.withOpacity(0.9),
-                    Colors.white.withOpacity(0.9),
-                  ],
-                ),
-              ),
-              child: Text(
-                '${data.author}',
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
-                  fontSize: 20,
-                ),
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(70),
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.purple.withOpacity(0.3),
-                    Colors.blue.withOpacity(0.2),
-                  ],
-                ),
-              ),
-              child: Text('${data.id}'),
-            ),
+            // Container(
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(70),
+            //     gradient: LinearGradient(
+            //       colors: [
+            //         Colors.white.withOpacity(0.9),
+            //         Colors.white.withOpacity(0.9),
+            //       ],
+            //     ),
+            //   ),
+            //   child: Text(
+            //     '${data.author}',
+            //     style: const TextStyle(
+            //       fontWeight: FontWeight.bold,
+            //       color: Colors.blue,
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            // ),
+            // Container(
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(70),
+            //     gradient: LinearGradient(
+            //       colors: [
+            //         Colors.purple.withOpacity(0.3),
+            //         Colors.blue.withOpacity(0.2),
+            //       ],
+            //     ),
+            //   ),
+            //   child: Text('${data.id}'),
+            // ),
             // Container(
             //     decoration: BoxDecoration(
             //       borderRadius: BorderRadius.circular(70),
