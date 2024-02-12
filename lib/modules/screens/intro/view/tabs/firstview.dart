@@ -50,25 +50,25 @@ class firstView extends StatelessWidget {
                 letterSpacing: -4,
               ),
             ),
-            Transform.translate(
-              offset: const Offset(0, 60),
-              child: FilledButton(
-                onPressed: next,
-                style: FilledButton.styleFrom(
-                  backgroundColor: Colors.purple.shade700.withOpacity(0.4),
-                  shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadiusDirectional.circular(10),
-                  ),
-                  fixedSize: const Size(250, 60),
-                ),
-                child: const Text(
-                  'READ NEW QUOTES   >>',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
+            // Transform.translate(
+            //   offset: const Offset(0, 60),
+            //   child: FilledButton(
+            //     onPressed: next,
+            //     style: FilledButton.styleFrom(
+            //       backgroundColor: Colors.purple.shade700.withOpacity(0.4),
+            //       shape: BeveledRectangleBorder(
+            //         borderRadius: BorderRadiusDirectional.circular(10),
+            //       ),
+            //       fixedSize: const Size(250, 60),
+            //     ),
+            //     child: const Text(
+            //       'READ NEW QUOTES   >>',
+            //       style: TextStyle(
+            //         fontWeight: FontWeight.bold,
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

@@ -1,113 +1,189 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:db_miner/modules/utils/helper/db_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
-import '../model/Jsonbackmodel.dart';
+import '../model/Json-model.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController searchData = TextEditingController();
+
     return Scaffold(
       appBar: AppBar(
-        // toolbarHeight: 20,
-        // backgroundColor: Colors,
-        title: Text(
-          "My Quotes",
-          style: GoogleFonts.manjari(
-            fontWeight: FontWeight.bold,
-            fontSize: 40,
-          ),
-        ),
-      ),
-      backgroundColor: Colors.white.withOpacity(0.9),
-      body: Column(
-        children: [
-          Expanded(
-            flex: 1,
-            child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(20),
-              margin: const EdgeInsets.symmetric(vertical: 23, horizontal: 20),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(23),
-                color: Colors.purple.withOpacity(0.2),
-              ),
-              child: FutureBuilder(
-                future: rootBundle.loadString('json_bank.json'),
-                builder: (context, snapshot) {
+        title: Text('HI! there'),
+        flexibleSpace: SafeArea(
+          child: Container(
+            alignment: Alignment.center,
+            // padding: const EdgeInsets.all(20),
+            // margin: const EdgeInsets.symmetric(vertical: 23, horizontal: 20),
+            decoration: const BoxDecoration(
+                //   borderRadius: BorderRadius.circular(23),
+                color: Colors.white),
+            child: FutureBuilder(
+              //TODO: LOCAL JSON BANK data calling
+
+              future: rootBundle.loadString('json_bank.json'),
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
                   List data = jsonDecode(snapshot.data!);
                   List<JsonModel> modelData = data
                       .map(
                         (e) => JsonModel.fetchData(data: e),
                       )
                       .toList();
-                  if (snapshot.hasData) {
-                    return ListView.builder(
-                      itemCount: modelData.length,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        Future<int?> res = DBHelper.dbHelper
-                            .insertQuery(jsonModel: modelData[index]);
+                  // log('-----------------------');
+                  // log('${modelData[1].id}');
+                  // log('${modelData[1].quote}');
+                  // log('${modelData[1].author}');
+                  // log('-----------------------');
 
-                        return Container(
-                          width: MediaQuery.sizeOf(context).height / 2.85,
-                          margin: const EdgeInsets.symmetric(horizontal: 10),
-                          padding: const EdgeInsets.all(40),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(23),
-                            color: Colors.white,
-                          ),
-                          child: Stack(
-                            children: [
-                              Transform.translate(
-                                offset: Offset(-4, 67),
-                                child: Chip(
-                                  label: Text("${modelData[index].id}"),
-                                ),
-                              ),
-                              Text(
-                                '${modelData[index].quote}',
-                                style: const TextStyle(
-                                  inherit: true,
-                                  wordSpacing: -2,
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                    );
-                  } else if (snapshot.hasError) {
-                    return const Text(
-                      'Error occurred',
-                      style: TextStyle(
-                        color: Colors.redAccent,
-                        fontSize: 30,
-                      ),
-                    );
-                  } else {
-                    return const Text('No Data available');
+                  for (var i in modelData) {
+                    // log('-----------------------');
+                    // log('${i.id}');
+                    // log('${i.quote}');
+                    // log('${i.author}');
+                    // log('-----------------------');
+                    //TODO: DATA SENDING TO HELPER CLASS
+
+                    DBHelper.dbHelper.insertQuery(jsonModel: i);
                   }
-                },
-              ),
+
+                  DBHelper.dbHelper.searchCategory(searchData: searchData.text);
+
+                  return Container(
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    // alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.grey.withOpacity(0.4),
+                      ),
+                      gradient: LinearGradient(
+                        transform: const GradientRotation(60),
+                        colors: [
+                          Colors.pink.withOpacity(0.3),
+                          Colors.pink.withOpacity(0.1),
+                          Colors.purple.withOpacity(0.4),
+                          Colors.white.withOpacity(0.5),
+                        ],
+                      ),
+                    ),
+                    child: TextFormField(
+                      controller: searchData,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        labelText: "Category",
+                        labelStyle: TextStyle(
+                          color: Colors.purple.shade200,
+                        ),
+                      ),
+                    ),
+                  );
+                } else if (snapshot.hasError) {
+                  return const Text(
+                    'Error occurred',
+                    style: TextStyle(
+                      color: Colors.redAccent,
+                      fontSize: 30,
+                    ),
+                  );
+                } else {
+                  return const Text('No Data available');
+                }
+              },
             ),
           ),
-          Expanded(
-            flex: 2,
-            child: Container(
+        ),
+      ),
+      body: Container(
+        padding: const EdgeInsets.only(left: 05, right: 5, top: 29),
+        child: FutureBuilder(
+          //TODO: FETCHING DATA FROM DATABASE TABLE
 
-                // child: FutureBuilder(future: future, builder: builder),
+          future: DBHelper.dbHelper.showData(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              List<JsonModel>? data = snapshot.data;
 
+              return GridView.builder(
+                physics: const BouncingScrollPhysics(),
+                itemCount: data!.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.7,
+                  // mainAxisSpacing: 2,
                 ),
-          ),
-        ],
+                itemBuilder: (context, index) {
+                  // log('-----------------------');
+                  // log('---------DATA----------');
+                  // log('-----------------------');
+                  // log('-----------------------');
+                  log('${data[index].id} :: ${data[index].id}');
+                  log('${data[index].quote} :: ${data[index].category}');
+                  log('${data[index].author}');
+                  //     log('-----------------------');
+
+                  return Ink(
+                    child: InkWell(
+                      onTap: () {
+                        Get.toNamed('/subview', arguments: data[index]);
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        margin: const EdgeInsets.symmetric(
+                          horizontal: 04,
+                          vertical: 04,
+                        ),
+                        padding: const EdgeInsets.all(29),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(22),
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.pink.withOpacity(0.2),
+                            style: BorderStyle.solid,
+                            width: 14,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text('${data[index].quote}'),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              );
+            } else if (snapshot.hasError) {
+              return Text(
+                'Error occurred:${snapshot.error}',
+                style: TextStyle(
+                  color: Colors.red.shade900,
+                  fontSize: 20,
+                ),
+              );
+            } else {
+              return const Center(
+                child: Text(
+                  'No Data available',
+                  style: TextStyle(
+                      color: Colors.pink,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 30),
+                ),
+              );
+            }
+          },
+        ),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:db_miner/modules/screens/intro/view/tabs/firstview.dart';
-import 'package:db_miner/modules/screens/intro/view/tabs/intro-view.dart';
+import 'package:db_miner/modules/screens/intro/view/tabs/secview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

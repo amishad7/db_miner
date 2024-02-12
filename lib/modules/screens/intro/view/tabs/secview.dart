@@ -6,7 +6,7 @@ class secView extends StatelessWidget {
 
   @override
   next() {
-    Get.toNamed('/home');
+    Get.offAndToNamed('/home');
   }
 
   Widget build(BuildContext context) {
@@ -26,22 +26,19 @@ class secView extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            Transform.translate(
-              offset: const Offset(0, 60),
-              child: FilledButton(
-                onPressed: next,
-                style: FilledButton.styleFrom(
-                  backgroundColor: Colors.purple.shade700.withOpacity(0.4),
-                  shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadiusDirectional.circular(10),
-                  ),
-                  fixedSize: const Size(250, 60),
+            FilledButton(
+              onPressed: next,
+              style: FilledButton.styleFrom(
+                backgroundColor: Colors.purple.shade700.withOpacity(0.4),
+                shape: BeveledRectangleBorder(
+                  borderRadius: BorderRadiusDirectional.circular(10),
                 ),
-                child: const Text(
-                  'READ NEW QUOTES   >>',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                fixedSize: const Size(250, 60),
+              ),
+              child: const Text(
+                'READ NEW QUOTES   >>',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
