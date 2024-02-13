@@ -9,8 +9,8 @@ void main() {
   runApp(
     GetMaterialApp(
       title: "DB miner",
-      debugShowCheckedModeBanner: false,
       initialRoute: '/intro',
+      debugShowCheckedModeBanner: false,
       getPages: [
         GetPage(
           name: '/intro',

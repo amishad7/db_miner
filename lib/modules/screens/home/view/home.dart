@@ -17,7 +17,6 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('HI! there'),
         flexibleSpace: SafeArea(
           child: Container(
             alignment: Alignment.center,
