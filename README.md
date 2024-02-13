@@ -26,3 +26,21 @@ overall user experience.
 - API Calling: The app leverages API calls to fetch additional quotes, expanding the collection
 beyond what is available in the Local JSON Bank. This ensures a diverse and ever-growing
 collection of inspirational quotes for users to explore.
+
+
+
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/4df8d7e7-369e-41ac-9811-c9f17c964c43" width="250">
+
+
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/fa2fb935-76da-422f-b23c-486e60f48c35" width="250">
+
+
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/7606a60f-4e2b-41b9-b29d-223c717aee61" width="250">
+
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/28c7d2aa-04bf-4a54-9d8a-da415cd279ec" width="250">
+
+
