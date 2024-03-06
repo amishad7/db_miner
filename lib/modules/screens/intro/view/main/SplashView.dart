@@ -12,7 +12,7 @@ class SplashView extends StatelessWidget {
   }
 
   Widget build(BuildContext context) {
-    return DefaultTabController(
+    return const DefaultTabController(
       length: 2,
       child: Scaffold(
         body: TabBarView(

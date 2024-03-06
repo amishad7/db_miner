@@ -107,8 +107,6 @@ class Home extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.only(left: 05, right: 5, top: 29),
         child: FutureBuilder(
-          //TODO: FETCHING DATA FROM DATABASE TABLE
-
           future: DBHelper.dbHelper.showData(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
