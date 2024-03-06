@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class firstView extends StatelessWidget {
   const firstView({super.key});
@@ -11,66 +12,45 @@ class firstView extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Colors.pink.shade500.withOpacity(0.4),
-              Colors.purple.shade500.withOpacity(0.4),
-              Colors.red.shade500.withOpacity(0.4),
+      backgroundColor: Colors.white,
+      body: Stack(
+        children: [
+          Container(
+            height: Get.height,
+            width: Get.width,
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.pinkAccent.withAlpha(96),
+            ),
+          ),
+          CircleAvatar(
+            backgroundColor: Colors.pink,
+            radius: 56,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                "Quotes Creator",
+                style: GoogleFonts.pacifico().copyWith(
+                  color: Colors.white,
+                  fontSize: 50,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 88.0),
+                child: Text(
+                  "design your quotes",
+                  style: GoogleFonts.pacifico().copyWith(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
+                ),
+              ),
             ],
           ),
-        ),
-        child: Stack(
-          children: [
-            Transform.translate(
-              offset: const Offset(-40, -283),
-              child: const DefaultTextStyle(
-                style: TextStyle(
-                  color: Colors.white,
-                  decoration: TextDecoration.underline,
-                  wordSpacing: 2,
-                  fontWeight: FontWeight.bold,
-                  decorationStyle: TextDecorationStyle.dashed,
-                  letterSpacing: 3,
-                  fontSize: 40,
-                ),
-                child: Text('Daily\nQuotes'),
-              ),
-            ),
-            const Text(
-              'Quotes App',
-              style: TextStyle(
-                fontWeight: FontWeight.w100,
-                color: Colors.white,
-                fontSize: 45,
-                letterSpacing: -4,
-              ),
-            ),
-            // Transform.translate(
-            //   offset: const Offset(0, 60),
-            //   child: FilledButton(
-            //     onPressed: next,
-            //     style: FilledButton.styleFrom(
-            //       backgroundColor: Colors.purple.shade700.withOpacity(0.4),
-            //       shape: BeveledRectangleBorder(
-            //         borderRadius: BorderRadiusDirectional.circular(10),
-            //       ),
-            //       fixedSize: const Size(250, 60),
-            //     ),
-            //     child: const Text(
-            //       'READ NEW QUOTES   >>',
-            //       style: TextStyle(
-            //         fontWeight: FontWeight.bold,
-            //       ),
-            //     ),
-            //   ),
-            // ),
-          ],
-        ),
+        ],
       ),
     );
   }
