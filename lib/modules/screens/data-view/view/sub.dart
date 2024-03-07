@@ -1,11 +1,8 @@
 import 'dart:developer';
-
+import 'dart:math';
 import 'package:db_miner/modules/screens/data-view/controller/dataController.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-
 import '../../home/model/Json-model.dart';
 
 class SubView extends StatelessWidget {
@@ -15,6 +12,16 @@ class SubView extends StatelessWidget {
   Widget build(BuildContext context) {
     JsonModel data = Get.arguments;
 
+    Random gIndex = Random();
+
+    List<Color> defaultColors = [
+      Colors.pinkAccent.withOpacity(0.3),
+      Colors.purpleAccent.withOpacity(0.2),
+    ];
+
+    Color defaultColor = Colors.white;
+
+    int currentIndex = 0;
     var dataController = Get.put(DataController());
 
     return Scaffold(
@@ -22,7 +29,7 @@ class SubView extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              log("Tab on back ");
+              // log("Tab on back ");
             },
             icon: const Icon(
               Icons.star_border,
@@ -33,7 +40,7 @@ class SubView extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Get.back();
-            log("Tab on back ");
+            // log("Tab on back ");
           },
           icon: const Icon(
             Icons.arrow_back_ios,
@@ -67,27 +74,24 @@ class SubView extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(70),
                 gradient: LinearGradient(
-                  colors: [
-                    Colors.purple.withOpacity(0.3),
-                    Colors.blue.withOpacity(0.2),
-                  ],
+                  colors: defaultColors,
                 ),
               ),
               child: Text(
                 '${data.quote}',
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: defaultColor,
                   fontSize: 20,
-                  shadows: [
+                  shadows: const [
                     Shadow(color: Colors.grey, blurRadius: 23),
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Container(
-              height: Get.height / 6.8,
+              height: Get.height / 9.8,
               width: Get.width / 0.1,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -95,7 +99,7 @@ class SubView extends StatelessWidget {
                   BoxShadow(
                     color: Colors.grey.withOpacity(0.6),
                     blurRadius: 56,
-                    offset: Offset(0, 9),
+                    offset: const Offset(0, 9),
                   ),
                 ],
                 borderRadius: BorderRadius.circular(20),
@@ -153,20 +157,128 @@ class SubView extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            GestureDetector(
-              onTap: () {
-                dataController.editVisibility();
-              },
-              child: const CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 30,
-                child: Icon(
-                  Icons.edit,
-                  size: 30,
-                  // fill: ,
-                  color: Colors.pink,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    // dataController.editVisibility();
+
+                    Get.bottomSheet(
+                      shape: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(
+                          color: Colors.transparent,
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          defaultColors = [
+                            Colors.primaries[currentIndex],
+                            Colors.primaries[
+                                gIndex.nextInt(Colors.primaries.length)],
+                          ];
+                        },
+                        child: Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: ListView.builder(
+                            itemCount: Colors.primaries.length,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              currentIndex = index;
+
+                              return Container(
+                                margin: const EdgeInsets.symmetric(
+                                    horizontal: 10, vertical: 20),
+                                width: 120,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Colors.primaries[index],
+                                      Colors.primaries[gIndex
+                                          .nextInt(Colors.primaries.length)],
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Color",
+                    style: TextStyle(
+                      color: Colors.pinkAccent,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
+                ElevatedButton(
+                  onPressed: () {
+                    // dataController.editVisibility();
+
+                    Get.bottomSheet(
+                      shape: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(
+                          color: Colors.transparent,
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          defaultColors = [
+                            Colors.primaries[currentIndex],
+                            Colors.primaries[
+                                gIndex.nextInt(Colors.primaries.length)],
+                          ];
+                        },
+                        child: Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: ListView.builder(
+                            itemCount: Colors.primaries.length,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              currentIndex = index;
+
+                              return GestureDetector(
+                                onTap: () {
+                                  defaultColor = Colors.primaries[index];
+                                },
+                                child: Container(
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 20),
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                    color: Colors.primaries[index],
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Text Color",
+                    style: TextStyle(
+                      color: Colors.pinkAccent,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

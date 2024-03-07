@@ -14,7 +14,7 @@ void main() {
       getPages: [
         GetPage(
           name: '/intro',
-          page: () => const SplashView(),
+          page: () => const firstView(),
         ),
         GetPage(
           name: '/home',

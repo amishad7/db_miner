@@ -1,3 +1,5 @@
+import 'package:get/get.dart';
+
 class JsonModel {
   int? id;
   var author;
@@ -22,4 +24,10 @@ class JsonModel {
       quote: data['quote'],
     );
   }
+}
+
+class ChangeView {
+  RxBool show;
+
+  ChangeView({required this.show});
 }
