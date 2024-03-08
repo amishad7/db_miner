@@ -1,17 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class firstView extends StatelessWidget {
-  const firstView({super.key});
+class SubSplash extends StatefulWidget {
+  const SubSplash({super.key});
 
   @override
-  next() {
-    Get.offAllNamed('/home');
-  }
+  State<SubSplash> createState() => _SubSplashState();
+}
 
+class _SubSplashState extends State<SubSplash> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,

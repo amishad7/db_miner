@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons:
   get:
   sqflite:
+  smooth_page_indicator: ^1.1.0
   path:
   google_fonts:
   carousel_slider:
