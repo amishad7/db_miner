@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SubSplash extends StatefulWidget {
@@ -42,7 +41,7 @@ class _SubSplashState extends State<SubSplash> {
             ),
           ),
           Transform.translate(
-            offset: Offset(125, 394),
+            offset: const Offset(125, 394),
             child: Container(
               height: 200,
               width: 450,
@@ -53,20 +52,20 @@ class _SubSplashState extends State<SubSplash> {
             ),
           ),
           Transform.translate(
-            offset: Offset(145, 414),
+            offset: const Offset(145, 414),
             child: Container(
               height: 200,
               width: 450,
-              padding: EdgeInsets.only(left: 23, top: 20),
+              padding: const EdgeInsets.only(left: 23, top: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.white.withAlpha(45),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(color: Colors.black, blurRadius: 90),
                 ],
               ),
               child: Text(
-                "Be a Own \nwriter",
+                "Be a your Own \nwriter",
                 style: GoogleFonts.play().copyWith(
                   color: Colors.white,
                   fontSize: 34,
@@ -75,11 +74,11 @@ class _SubSplashState extends State<SubSplash> {
             ),
           ),
           Transform.translate(
-            offset: Offset(45, 78),
+            offset: const Offset(45, 78),
             child: Container(
               height: 45,
               width: 45,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(

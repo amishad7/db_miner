@@ -35,72 +35,99 @@ class Home extends StatelessWidget {
         onPressed: () {
           Get.bottomSheet(
             Container(
-              height: 160,
-              color: Colors.grey.shade900,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+              height: 230,
+              decoration: BoxDecoration(
+                image: const DecorationImage(
+                  fit: BoxFit.cover,
+                  opacity: 0.4,
+                  image: NetworkImage(
+                      "https://i.pinimg.com/564x/3e/27/1b/3e271b097c955d6dcdef83b92a1e124f.jpg"),
+                ),
+                color: Colors.grey.shade900,
+                borderRadius: const BorderRadius.only(
+                  topRight: Radius.circular(20),
+                  topLeft: Radius.circular(20),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      FloatingActionButton(
-                        backgroundColor: Colors.grey,
-                        shape: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: const BorderSide(
-                            color: Colors.transparent,
-                          ),
-                        ),
-                        elevation: 0,
-                        onPressed: () {},
-                        child: const Icon(
-                          Icons.star_border,
-                          color: Colors.white70,
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      const Text(
-                        "Favourite",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                  Container(
+                    width: Get.width / 10,
+                    height: Get.height / 70,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(45),
+                      color: Colors.grey.withAlpha(56),
+                      shape: BoxShape.rectangle,
+                    ),
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                  SizedBox(height: 60),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Obx(
-                        () => FloatingActionButton(
-                          backgroundColor: Colors.grey,
-                          shape: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: const BorderSide(
-                              color: Colors.transparent,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          FloatingActionButton(
+                            backgroundColor: Colors.grey,
+                            shape: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: const BorderSide(
+                                color: Colors.transparent,
+                              ),
+                            ),
+                            elevation: 0,
+                            onPressed: () {},
+                            child: const Icon(
+                              Icons.star_border,
+                              color: Colors.white70,
                             ),
                           ),
-                          elevation: 0,
-                          onPressed: () {
-                            homeController.changeView();
-                          },
-                          child: Icon(
-                            (homeController.c1.show.value)
-                                ? Icons.rectangle
-                                : Icons.grid_view,
-                            color: Colors.white70,
+                          const SizedBox(height: 10),
+                          const Text(
+                            "Favourite",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
-                        ),
+                        ],
                       ),
-                      const SizedBox(height: 10),
-                      Text(
-                        (homeController.c1.show.value)
-                            ? "List View"
-                            : "grid view",
-                        style: const TextStyle(
-                          color: Colors.white,
-                        ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Obx(
+                            () => FloatingActionButton(
+                              backgroundColor: Colors.grey,
+                              shape: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: const BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                              ),
+                              elevation: 0,
+                              onPressed: () {
+                                homeController.changeView();
+                              },
+                              child: Icon(
+                                (homeController.c1.show.value)
+                                    ? Icons.rectangle
+                                    : Icons.grid_view,
+                                color: Colors.white70,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            (homeController.c1.show.value)
+                                ? "List View"
+                                : "grid view",
+                            style: const TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -114,6 +141,7 @@ class Home extends StatelessWidget {
           color: Colors.white70,
         ),
       ),
+      backgroundColor: Colors.black,
       body: Container(
         padding: const EdgeInsets.only(left: 05, right: 5, top: 29),
         child: FutureBuilder(
@@ -127,6 +155,7 @@ class Home extends StatelessWidget {
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
+                        childAspectRatio: 0.8,
                       ),
                       physics: const BouncingScrollPhysics(),
                       itemCount: data!.length,
@@ -152,8 +181,9 @@ class Home extends StatelessWidget {
                             ),
                             padding: const EdgeInsets.all(19), //
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.black.withAlpha(23),
+                              borderRadius: BorderRadius.circular(30),
+                              // color: Colors.white38.withOpacity(0.5),
+                              color: const Color(0xff444444),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -162,6 +192,8 @@ class Home extends StatelessWidget {
                                   "${data[index].author}",
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                    color: Colors.white,
                                   ),
                                 ),
                                 const SizedBox(
@@ -174,9 +206,10 @@ class Home extends StatelessWidget {
                                     softWrap: true,
                                     maxLines: 5,
                                     style: GoogleFonts.aBeeZee().copyWith(
-                                      color: Colors.black,
+                                      color: Colors.white70,
+                                      // overflow: TextOverflow.clip,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.w400,
-                                      fontSize: 16,
                                     ),
                                   ),
                                 ),
@@ -206,29 +239,34 @@ class Home extends StatelessWidget {
                           child: Container(
                             alignment: Alignment.center,
                             margin: const EdgeInsets.symmetric(
-                              horizontal: 04,
-                              vertical: 04,
+                              horizontal: 09,
+                              vertical: 09,
                             ),
-                            padding: const EdgeInsets.all(29),
+                            padding: const EdgeInsets.all(30),
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.black.withAlpha(23),
+                              borderRadius: BorderRadius.circular(30),
+                              // color: Colors.white38.withOpacity(0.5),
+                              color: const Color(0xff444444),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  '${data[index].quote}',
-                                  style: GoogleFonts.aBeeZee().copyWith(
-                                    color: Colors.black,
-                                    // overflow: TextOverflow.clip,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                                Text(
                                   "${data[index].author}",
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(height: 20),
+                                Text(
+                                  '${data[index].quote}',
+                                  style: GoogleFonts.aBeeZee().copyWith(
+                                    color: Colors.white70,
+                                    // overflow: TextOverflow.clip,
+                                    fontSize: 21,
+                                    fontWeight: FontWeight.w400,
                                   ),
                                 ),
                               ],
