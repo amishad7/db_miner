@@ -28,19 +28,22 @@ beyond what is available in the Local JSON Bank. This ensures a diverse and ever
 collection of inspirational quotes for users to explore.
 
 
+<img src="https://github.com/amishad7/db_miner/assets/118448879/b5766c5f-066f-463a-91d4-eaa0538b763d" width="250">
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/b5d302ab-c0e7-4bf4-b6a1-c17fba90c8c9" width="250">
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/6f25c05f-723b-42a3-8f55-687f6067c50b" width="250">
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/ce4d654e-9ea9-4866-8db0-175b3a9dc9fc" width="250">
+
+<img src="https://github.com/amishad7/db_miner/assets/118448879/6417b477-f8c0-4b16-a0b6-1333d83a4d8c" width="250">
 
 
-<img src="https://github.com/amishad7/db_miner/assets/118448879/4df8d7e7-369e-41ac-9811-c9f17c964c43" width="250">
+<img src="https://github.com/amishad7/db_miner/assets/118448879/2708b720-0e65-4214-9ba7-b0f2ec8f71d4" width="250">
 
 
-
-<img src="https://github.com/amishad7/db_miner/assets/118448879/fa2fb935-76da-422f-b23c-486e60f48c35" width="250">
-
+<img src="https://github.com/amishad7/db_miner/assets/118448879/d1997cfa-60ab-4bf2-b064-c42e7c6f2ca6" width="250">
 
 
-<img src="https://github.com/amishad7/db_miner/assets/118448879/7606a60f-4e2b-41b9-b29d-223c717aee61" width="250">
-
-
-<img src="https://github.com/amishad7/db_miner/assets/118448879/28c7d2aa-04bf-4a54-9d8a-da415cd279ec" width="250">
 
 
